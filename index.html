@@ -21,10 +21,10 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/">Home</a>
+          <li class="nav-item active">
+            <a class="nav-link " aria-current="page" href="/">Home</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item active ">
             <a class="nav-link" href="about.html">About</a>
           </li>
 
@@ -49,13 +49,76 @@
         </ul>
         <form class="d-flex" role="search">
           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-          <button class="btn btn-outline-success" type="submit">
+          <button class="btn btn-outline-danger" type="submit">
             Search
           </button>
         </form>
+        <div class="mx-2">
+          <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#LoginModal"></button>>Login</button>
+          <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#sugnUpModal"></button>>SignUp</button>
+
+        </div>
       </div>
     </div>
   </nav>
+
+  <!-- Modal -->
+
+
+  <!--Login Modal -->
+  <div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="LoginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="LoginModalLabel">Login </h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- signU Modal -->
+  <div class="modal fade" id="SignUpModal" tabindex="-1" aria-labelledby="signUpModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="signUpModalLabel">SignUp</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- Caraousel -->
   <div id="carouselExampleCaptions" class="carousel slide active carousel-fade ">
@@ -118,7 +181,7 @@
           class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
           <div class="col p-4 d-flex flex-column position-static">
             <strong class="d-inline-block mb-2 text-primary">World</strong>
-            <h3 class="mb-0">Global Conferences</h3>
+            <h3 class="mb-0">Developer</h3>
             <div class="mb-1 text-muted">Nov 12</div>
             <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to
               additional content.</p>
@@ -134,7 +197,7 @@
           class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
           <div class="col p-4 d-flex flex-column position-static">
             <strong class="d-inline-block mb-2 text-success">Design</strong>
-            <h3 class="mb-0">Learn Designing</h3>
+            <h3 class="mb-0">Software Development Engineer</h3>
             <div class="mb-1 text-muted">Nov 11</div>
             <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional
               content.</p>
@@ -184,6 +247,12 @@
       </div>
     </div>
   </div>
+
+  <footer class="container">
+    <p class="float-end"><a href="#">Back to top</a></p>
+    <p>© 2022–2026 zlnxy, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+  </footer>
+
 
   <!-- Bootsrap css js -->
 
